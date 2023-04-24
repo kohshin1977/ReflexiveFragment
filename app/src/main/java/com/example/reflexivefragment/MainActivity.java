@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(mainPagerAdapter);
         new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
             tab.setText("Main Tab " + (position + 1)).setIcon(R.drawable.ic_launcher_foreground);
+//            tab.setCustomView(R.layout.custom_view);
         }).attach();
     }
 
